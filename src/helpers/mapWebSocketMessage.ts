@@ -13,7 +13,6 @@ export const wrapTiles = (data: string) => {
   allTextNodes.forEach((textNode) => {
     wrapEachCharacter(textNode, 'button');
   });
-
   return { map, container };
 }
 
