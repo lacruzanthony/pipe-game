@@ -1,3 +1,6 @@
+# Netlify URL
+https://lucid-brattain-1c5ba7.netlify.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -19,28 +22,23 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+# The Solution
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In the beggining I decided to use a form because I thought It was a great idea to show some skills with the submit manipulation and the bootstrap library. 
+All of these wasn't a great approach because due to the first one, the way you manage the tiles was tremendusly slow and the bootstrap library ended up covering my abilities with HTML & CSS.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Now, what I made in the new tile game is:
+  * Board: the board is a matrix of buttons, where each button represents a tile. If you click a tile you should see how the tile rotate to its corresponding position.
+  * Verify button: this is a button where its purpose is to check if the pipe puzzle is completed, if the combination of tiles is wrong you will see a message.
+  * Level: where you can chance the level of the puzzle. Until level 3 the matrix is having the proper space.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Technical level
+  * There is a file called, `src/hooks/useWebSocket.ts` where is used to manage the whole logic for the Websocket. I decided to use a custom hook because we might need to change/move the invocation of the Websocket.
+  * After I received the tiles for the corresponding level I created the buttons from the tiles using some utility functions.
+  * Then, inside the `<Board />` component I hydrate the buttons board from the previous step.
+  * For the verify button and the level select I just call the Websocket with its corresponding message.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
