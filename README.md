@@ -25,7 +25,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 # The Solution
 
 In the beggining I decided to use a form because I thought It was a great idea to show some skills with the submit manipulation and the bootstrap library. 
-All of these wasn't a great approach because due to the first one, the way you manage the tiles was tremendusly slow and the bootstrap library ended up covering my abilities with HTML & CSS.
+All of these wasn't a great approach because due to the first one, the way I managed the tiles was tremendusly slow and the bootstrap library ended up overlaping my abilities with HTML & CSS.
 
 Now, what I made in the new tile game is:
   * Board: the board is a matrix of buttons, where each button represents a tile. If you click a tile you should see how the tile rotate to its corresponding position.
