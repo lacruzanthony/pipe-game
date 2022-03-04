@@ -39,6 +39,10 @@ Now, what I made in the new tile game is:
   * Then, inside the `<Board />` component I hydrate the buttons board from the previous step.
   * For the verify button and the level select I just call the Websocket with its corresponding message.
 
+## Limitions
+ * I had some issues with the with and the levels starting from the 4th.
+ * Due to time and my PTO, the <Board /> components doesn't have unit testing.
+
 
 
 
