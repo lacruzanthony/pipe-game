@@ -20,17 +20,18 @@
 }
 
 .App-header {
+  font-family: 'Fascinate', cursive;
   align-items: center;
   justify-content: center;
-  font-size: calc(2vmin);
-  color: white;
+  font-size: calc(10vmin);
+  color: #6835f4;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.pipegame-container{
+.pipegame-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -38,7 +39,7 @@
   align-content: space-between;
 }
 
-.btn-verify{
+.btn-verify {
   background-color: #01aef0;
   border: none;
   color: #e3f4fe;
@@ -55,18 +56,18 @@ select {
   width: 72px;
   padding: 5px 35px 5px 5px;
   font-size: 16px;
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   height: 34px;
   -webkit-appearance: auto;
   -moz-appearance: auto;
   appearance: auto;
   border-radius: 4px;
 }
-label{
-  color: black
+label {
+  color: black;
 }
 
-.btn-tile{
+.btn-tile {
   background-color: #f3f3f117;
   font-size: 16px;
   color: #152738;
@@ -74,7 +75,7 @@ label{
   cursor: pointer;
 }
 
-.btn-tile-higher-levels{
+.btn-tile-higher-levels {
   background-color: #f3f3f117;
   color: #152738;
   border-radius: 4px;
@@ -82,30 +83,30 @@ label{
 }
 
 .message {
-  background-color:#fb616b;
-  color:white;
+  background-color: #fb616b;
+  color: white;
   border: solid 1px #fb616b;
   position: absolute;
   text-align: center;
-  width:200px;
+  width: 200px;
   left: 50%;
-  margin-left:-100px;
+  margin-left: -100px;
   top: 15%;
   font-size: 25px;
 }
 
 @media (max-width: 320px) {
-  .btn-verify{
+  .btn-verify {
     margin-top: 3.2em;
   }
 
-  .btn-tile{
-    font-size:1.5rem;
+  .btn-tile {
+    font-size: 1.5rem;
   }
 }
 
 @media (min-width: 375px) {
-  .btn-verify{
+  .btn-verify {
     margin-top: 1.8em;
   }
 
@@ -113,23 +114,23 @@ label{
     height: 18vmin;
   }
 
-  .btn-tile{
-    font-size:1.8rem;
+  .btn-tile {
+    font-size: 1.8rem;
   }
 }
 
 @media (min-width: 425px) {
-  .btn-verify{
+  .btn-verify {
     margin-top: 1em;
   }
 }
 
 @media (min-width: 2560px) {
-  .btn-tile{
+  .btn-tile {
     font-size: 3em;
   }
-  
-  .btn-verify{
+
+  .btn-verify {
     font-size: 32px;
   }
 }
