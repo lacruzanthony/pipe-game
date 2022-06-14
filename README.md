@@ -41,7 +41,6 @@ Now, what I made in the new tile game is:
 
 ## Limitions
  * I had some issues with the width and the levels starting from the 4th.
- * Due to time and my PTO, the <Board /> components doesn't have unit testing.
 
 
 
