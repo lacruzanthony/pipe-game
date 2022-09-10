@@ -1,5 +1,5 @@
 # Netlify URL
-https://lucid-brattain-1c5ba7.netlify.app/
+https://beautiful-gaufre-41aac0.netlify.app/
 
 # Getting Started with Create React App
 
